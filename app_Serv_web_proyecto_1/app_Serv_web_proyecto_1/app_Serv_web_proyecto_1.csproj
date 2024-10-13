@@ -216,6 +216,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Clases\clsCliente.cs" />
     <Compile Include="Clases\clsEmpleado.cs" />
+    <Compile Include="Clases\clsReserva.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

@@ -60,7 +60,11 @@ namespace app_Serv_web_proyecto_1.Clases
         }
 
 
-
+        public List<Empleado> LlenarCombo()
+        {
+            return proyecto_Entities1.Empleadoes    
+                .ToList();
+        }
 
 
 
