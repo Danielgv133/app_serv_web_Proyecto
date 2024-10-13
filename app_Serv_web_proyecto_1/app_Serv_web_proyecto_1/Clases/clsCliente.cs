@@ -62,7 +62,7 @@ namespace app_Serv_web_proyecto_1.Clases
             Cliente _cliente = Consultar(cliente.idcliente);
             proyecto_Entities1.Clientes.Remove(_cliente);
             proyecto_Entities1.SaveChanges();
-            return "Se eliminó al usuario " + cliente.idcliente;
+            return "Se eliminó al usuario " + _cliente.idcliente;
         }
 
 
