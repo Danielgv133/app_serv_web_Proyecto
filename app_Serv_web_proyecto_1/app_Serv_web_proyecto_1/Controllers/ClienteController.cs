@@ -1,6 +1,6 @@
 ﻿using app_Serv_web_proyecto_1.Clases;
+using app_Serv_web_proyecto_1.Models;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +9,14 @@ using System.Web.Http;
 
 namespace app_Serv_web_proyecto_1.Controllers
 {
-    [EnableCors(origins: "https://localhost:44327", headers: "*", methods: "*")]
+
     [RoutePrefix("api/Clientes")]
     public class ClienteController : ApiController
     {
+
         [HttpGet]
         [Route("Consultar")]
-        public ParqueDiversione Consultar(string idcliente)
+        public Cliente Consultar(string idcliente)
         {
             clsCliente _cliente = new clsCliente();
             return _cliente.Consultar(idcliente);
@@ -23,7 +24,7 @@ namespace app_Serv_web_proyecto_1.Controllers
 
         [HttpPost]
         [Route("Insertar")]
-        public string Insertar([FromBody] app_Serv_web_proyecto_1 cliente)
+        public string Insertar([FromBody] Cliente cliente)
         {
             clsCliente _cliente = new clsCliente();
             _cliente.cliente = cliente;
@@ -32,7 +33,7 @@ namespace app_Serv_web_proyecto_1.Controllers
 
         [HttpPut]
         [Route("Actualizar")]
-        public string Actualizar([FromBody] app_Serv_web_proyecto_1 cliente)
+        public string Actualizar([FromBody] Cliente cliente)
         {
             clsCliente _cliente = new clsCliente();
             _cliente.cliente = cliente;
@@ -41,7 +42,7 @@ namespace app_Serv_web_proyecto_1.Controllers
 
         [HttpDelete]
         [Route("Eliminar")]
-        public string Eliminar([FromBody] app_Serv_web_proyecto_1 cliente)
+        public string Eliminar([FromBody] Cliente cliente)
         {
             clsCliente _cliente = new clsCliente();
             _cliente.cliente = cliente;
