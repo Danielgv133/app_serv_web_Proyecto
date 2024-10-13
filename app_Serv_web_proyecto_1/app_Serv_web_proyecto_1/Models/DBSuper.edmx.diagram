@@ -4,6 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+      <Diagram DiagramId="a5ac4bc1b9cf4e4b8134407f292f3358" Name="Diagram1">
+        <EntityTypeShape EntityType="proyectoModel.Cliente" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.Empleado" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.Reserva" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="proyectoModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="proyectoModel.FK__Reserva__idclien__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="proyectoModel.FK__Reserva__idemple__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>
