@@ -20,7 +20,7 @@ namespace app_Serv_web_proyecto_1.Controllers
             return _empleado.Consultar(idempleado);
         }
 
-        [HttpPost]
+        [HttpPost] 
         [Route("Insertar")]
         public string Insertar([FromBody] Empleado empleado)
         {
